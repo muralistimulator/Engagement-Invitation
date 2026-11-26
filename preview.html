@@ -31,6 +31,15 @@ h2{font-family:'Cinzel',serif;font-weight:500;font-size:clamp(17px,3vw,27px);let
 .couple-art{width:min(560px,90%);margin:14px auto 10px;padding:20px 10px 8px;position:relative;border-top:1px solid #b48a46;border-bottom:1px solid #b48a46;background:linear-gradient(180deg,#f8edcf99,#e5cf9c55)}
 .couple-art .deity{font-family:'Great Vibes',cursive;font-size:clamp(30px,5vw,46px);color:#85531c}
 .couple-art .caption{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:#725022;margin-top:6px}
+.ram-sita-frame{width:min(390px,88%);margin:18px auto 12px;padding:10px;background:linear-gradient(135deg,#8b5a20,#f3d58d,#8b5a20);border:1px solid #8b5a20;box-shadow:0 12px 28px #5b321b35;border-radius:180px 180px 12px 12px;animation:divineGlow 4s ease-in-out infinite}
+.ram-sita-frame img{display:block;width:100%;max-height:430px;object-fit:cover;object-position:center 30%;border-radius:170px 170px 6px 6px;border:3px solid #fff1ce}
+.art-credit{font:10px 'Cinzel',serif;color:#795321;margin:7px auto 0}
+.art-credit a{color:#795321}
+.float-petal{position:absolute;z-index:0;top:-30px;color:#a66a34;opacity:.65;pointer-events:none;animation:petalFall linear infinite}
+.float-petal.one{left:12%;animation-duration:13s}.float-petal.two{left:78%;animation-duration:16s;animation-delay:-5s}.float-petal.three{left:48%;animation-duration:18s;animation-delay:-9s}
+@keyframes petalFall{0%{transform:translate3d(0,-5vh,0) rotate(0deg);opacity:0}12%{opacity:.7}100%{transform:translate3d(45px,110vh,0) rotate(420deg);opacity:0}}
+@keyframes divineGlow{0%,100%{box-shadow:0 12px 28px #5b321b35,0 0 0 0 #d8b66e00}50%{box-shadow:0 14px 34px #5b321b55,0 0 22px 4px #d8b66e70}}
+@media(prefers-reduced-motion:reduce){.float-petal,.ram-sita-frame{animation:none!important}}
 .blessing{font-size:clamp(14px,2.2vw,18px);line-height:1.8;color:#674520;margin:15px auto;max-width:680px}
 .date-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:720px;margin:26px auto 18px}
 .date-item{padding:12px 8px;border-right:1px solid #b28a4b}
@@ -60,6 +69,7 @@ footer{background:#3d2115;color:#f3dfb5;padding:28px 12px;font:11px 'Cinzel',ser
 </style>
 </head>
 <body>
+<span class="float-petal one" aria-hidden="true">❀</span><span class="float-petal two" aria-hidden="true">✿</span><span class="float-petal three" aria-hidden="true">❀</span>
 <section class="hero">
  <span class="hanging left">✺<br>│<br>🔔</span><span class="hanging right">✺<br>│<br>🔔</span>
  <span class="floral-corner left">❀</span><span class="floral-corner right">❀</span>
@@ -77,6 +87,10 @@ footer{background:#3d2115;color:#f3dfb5;padding:28px 12px;font:11px 'Cinzel',ser
   <div class="couple-art">
    <div class="deity">Sita &amp; Ram</div>
    <div class="caption">A BLESSING OF LOVE, DEVOTION &amp; TOGETHERNESS</div>
+   <div class="ram-sita-frame">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_marriage_ceremony_of_Rama_and_Sita.jpg?width=1200" alt="Traditional painting depicting the wedding of Lord Rama and Goddess Sita" loading="lazy">
+   </div>
+   <p class="art-credit">Traditional artwork: <a href="https://commons.wikimedia.org/wiki/File:The_marriage_ceremony_of_Rama_and_Sita.jpg" target="_blank" rel="noopener">The Marriage Ceremony of Rama and Sita</a> · Public domain artwork</p>
    <div class="lamp-row">🪔　❀　🪔</div>
   </div>
   <p class="blessing">With the divine blessings of Lord Rama and Goddess Sita,<br>and the love and blessings of our families.</p>
