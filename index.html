@@ -1,339 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shri Sita Ram Blessings | Muralidharan & Santhalakshmi</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Playfair+Display&family=Noto+Serif+Devanagari:wght@500;600&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4e5c5">
+<title>Muralidharan K & Santhalakshmi J | Engagement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-* { box-sizing:border-box; margin:0; padding:0; }
-
-body {
-  background:#25070d;
-  color:#f8e6bd;
-  font-family:'Playfair Display',serif;
-  text-align:center;
-  overflow-x:hidden;
-}
-
-section {
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  padding:55px 20px;
-  position:relative;
-  border-bottom:1px solid #9d713b;
-}
-
-section::before {
-  content:"";
-  position:absolute;
-  inset:13px;
-  border:1px solid #c9a45b;
-  pointer-events:none;
-}
-
-.hero {
-  background:
-  linear-gradient(#25070dcc,#25070dcc),
-  radial-gradient(ellipse at center,#79321d,#25070d);
-}
-
-.om {
-  font-size:65px;
-  color:#e6b85c;
-  margin-bottom:20px;
-  animation:glow 3s infinite alternate;
-}
-
-h1 {
-  font-family:'Great Vibes',cursive;
-  font-size:clamp(48px,9vw,90px);
-  color:#f4d18b;
-  font-weight:400;
-  margin:15px 0;
-}
-
-h2 {
-  font-family:'Cinzel',serif;
-  font-size:clamp(23px,5vw,38px);
-  color:#e9c77d;
-  margin:20px;
-}
-
-.subtitle {
-  letter-spacing:5px;
-  font-size:13px;
-  color:#e9c77d;
-  margin:15px;
-}
-
-.divider {
-  color:#e5b45e;
-  font-size:30px;
-  margin:20px;
-}
-
-.names {
-  font-family:'Great Vibes',cursive;
-  font-size:clamp(45px,8vw,76px);
-  color:#fff0cb;
-  line-height:1.5;
-}
-
-.card {
-  border:1px solid #c79a50;
-  padding:35px 25px;
-  max-width:650px;
-  width:100%;
-  background:#4a101c99;
-  box-shadow:0 0 35px #0008;
-}
-
-.details {
-  line-height:2.2;
-  font-size:18px;
-}
-
-.gold { color:#e9c77d; }
-
-button, .map-button {
-  padding:14px 28px;
-  border:1px solid #e9c77d;
-  background:#9a5427;
-  color:white;
-  font-family:inherit;
-  font-size:16px;
-  text-decoration:none;
-  cursor:pointer;
-  display:inline-block;
-  margin-top:25px;
-  transition:.3s;
-}
-
-button:hover, .map-button:hover {
-  background:#d5a653;
-  color:#350b12;
-}
-
-.countdown {
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:15px;
-  margin:30px 0;
-}
-
-.time {
-  border:1px solid #c79a50;
-  padding:18px 14px;
-  min-width:85px;
-  background:#501320;
-}
-
-.time strong {
-  display:block;
-  font-size:30px;
-  color:#f5d68e;
-}
-
-.time span {
-  font-size:12px;
-  letter-spacing:2px;
-}
-
-.petals {
-  position:fixed;
-  top:-30px;
-  z-index:10;
-  pointer-events:none;
-  animation:fall linear infinite;
-}
-
-@keyframes fall {
-  to { transform:translateY(110vh) rotate(720deg); }
-}
-
-@keyframes glow {
-  from { text-shadow:0 0 10px #d49b40; }
-  to { text-shadow:0 0 35px #ffcc70; }
-}
-
-.fade {
-  animation:appear 2s ease both;
-}
-
-@keyframes appear {
-  from {opacity:0;transform:translateY(35px);}
-  to {opacity:1;transform:translateY(0);}
-}
-
-footer {
-  padding:35px 15px;
-  color:#d7b777;
-  letter-spacing:2px;
-  font-size:12px;
-}
-
-/* SITA-RAM DEVOTIONAL WEDDING THEME */
-:root{--wine:#3b1017;--wine2:#571b25;--gold:#d9b56c;--gold-light:#f6e5b8;--cream:#fff7e8;--saffron:#c77b32}
-body{background:var(--wine);color:var(--cream)}
-.hero{background:radial-gradient(ellipse at 50% 35%,#873b2c 0%,#571b25 42%,#260910 100%)}
-section:before{border-color:var(--gold);outline:1px solid #d9b56c44;outline-offset:5px}
-h1{color:var(--gold-light);text-shadow:0 4px 20px #160509}
-h2,.divider,.gold{color:var(--gold)}
-.subtitle{color:var(--gold-light)}
-.card{background:linear-gradient(145deg,#67232cdd,#351017ee);border-color:var(--gold);outline:1px solid #d9b56c44;outline-offset:6px}
-.time{background:#351017;border-color:var(--gold)}
-.time strong{color:var(--gold-light)}
-.mantra{font-family:'Noto Serif Devanagari',serif;color:var(--gold-light);font-size:clamp(18px,3vw,25px);margin:14px}
-.temple-arch{width:min(320px,78vw);height:155px;margin:0 auto 15px;border:2px solid var(--gold);border-bottom:0;border-radius:160px 160px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 0 25px #e4bd6b22,inset 0 0 20px #e4bd6b15}
-.temple-arch:before,.temple-arch:after{content:"";position:absolute;bottom:0;width:18px;height:65px;border:1px solid var(--gold);border-bottom:0}
-.temple-arch{position:relative}
-.temple-arch:before{left:14px}.temple-arch:after{right:14px}
-.english-mantra{font-family:'Cinzel',serif;color:var(--gold);font-size:11px;letter-spacing:3px}
-.blessing{font-family:'Noto Serif Devanagari',serif;color:var(--gold-light);font-size:clamp(18px,3vw,24px);margin:15px}
-.diya-row{font-size:24px;letter-spacing:10px;margin:16px;color:var(--gold);text-shadow:0 0 14px #ffbd59}
-.lotus{font-size:34px;color:var(--gold);margin:12px}
-.toran{color:var(--gold);font-size:23px;letter-spacing:7px;margin:8px}
-button,.map-button{background:linear-gradient(135deg,#b86e35,#87502c);border-color:var(--gold);font-family:'Cinzel',serif;letter-spacing:1px}
-button:hover,.map-button:hover{background:var(--gold);color:var(--wine)}
-footer{color:#dfc58f}
+:root{--paper:#f4e5c5;--paper2:#fff4dc;--ink:#4a1712;--gold:#a97828;--gold2:#d8b66e;--green:#405c35;--wine:#651b1c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#3d2115;color:var(--ink);font-family:'Playfair Display',serif;text-align:center;overflow-x:hidden}
+section{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;padding:58px 24px;overflow:hidden;background:radial-gradient(ellipse at center,#fff8e8 0%,var(--paper) 70%,#dfc18b 100%);border-bottom:8px double var(--gold)}
+section:before{content:"";position:absolute;inset:13px;border:2px solid var(--gold);outline:1px solid #a9782877;outline-offset:5px;pointer-events:none}
+section:after{content:"❧  ✥  ❧";position:absolute;top:24px;left:0;right:0;color:var(--gold);font-size:20px;letter-spacing:12px;pointer-events:none}
+.hero{background:radial-gradient(ellipse at center,#fff8e7 0%,#f0dfb9 68%,#d5b47b 100%)}
+.inner{width:min(850px,100%);position:relative;z-index:1}
+.garland{font-size:clamp(20px,4vw,34px);letter-spacing:7px;color:var(--green);margin:0 0 12px;text-shadow:0 1px #fff}
+.temple-mark{width:104px;height:104px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:10px auto 15px;box-shadow:0 0 0 6px #a9782820, inset 0 0 0 5px #a9782820;color:var(--gold);font-size:52px}
+.kicker{font-family:'Cinzel',serif;font-size:clamp(10px,1.8vw,14px);letter-spacing:3px;line-height:1.8;color:#68421c}
+h1{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(38px,7vw,66px);line-height:1.1;color:#5a2118;margin:12px 0}
+h2{font-family:'Cinzel',serif;font-weight:500;font-size:clamp(17px,3vw,27px);letter-spacing:2px;color:#8b5a20;margin:17px 0}
+.names{font-family:'Great Vibes',cursive;font-size:clamp(48px,8vw,78px);line-height:1.25;color:#4d1915;margin:5px 0}
+.amp{font-family:'Great Vibes',cursive;font-size:43px;color:var(--gold);margin:0}
+.rule{display:flex;align-items:center;justify-content:center;gap:13px;color:var(--gold);margin:16px auto;font-size:24px}
+.rule:before,.rule:after{content:"";width:90px;max-width:20vw;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.rule:after{transform:rotate(180deg)}
+.couple-art{width:min(560px,90%);margin:14px auto 10px;padding:20px 10px 8px;position:relative;border-top:1px solid #b48a46;border-bottom:1px solid #b48a46;background:linear-gradient(180deg,#f8edcf99,#e5cf9c55)}
+.couple-art .deity{font-family:'Great Vibes',cursive;font-size:clamp(30px,5vw,46px);color:#85531c}
+.couple-art .caption{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:#725022;margin-top:6px}
+.blessing{font-size:clamp(14px,2.2vw,18px);line-height:1.8;color:#674520;margin:15px auto;max-width:680px}
+.date-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:720px;margin:26px auto 18px}
+.date-item{padding:12px 8px;border-right:1px solid #b28a4b}
+.date-item:last-child{border:0}
+.date-label{font:11px 'Cinzel',serif;letter-spacing:2px;color:#8a642a}
+.date-value{font-size:17px;font-weight:600;margin-top:7px;color:#4d2118}
+.venue{font-size:17px;line-height:1.85;color:#4d2118}
+.map-button,button{display:inline-block;margin:20px 0 0;padding:13px 26px;border:1px solid var(--gold);background:#6a261e;color:#fff3d7;text-decoration:none;font:12px 'Cinzel',serif;letter-spacing:2px;cursor:pointer;transition:.25s}
+.map-button:hover,button:hover{background:var(--gold);color:#fff}
+.countdown{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px auto}
+.time{min-width:75px;padding:13px 10px;border:1px solid #b48a46;background:#fff8e8b8}
+.time strong{display:block;font:600 27px 'Cinzel',serif;color:#6a261e}
+.time span{font:10px 'Cinzel',serif;letter-spacing:1.5px;color:#805b2a}
+.lamp-row{font-size:27px;letter-spacing:12px;margin:14px;color:#9b641f}
+.footer-note{font:11px 'Cinzel',serif;letter-spacing:2px;color:#755020;line-height:2;margin-top:20px}
+.side-leaves{position:absolute;top:18%;font-size:clamp(36px,7vw,68px);color:var(--green);opacity:.82;writing-mode:vertical-rl;filter:drop-shadow(0 2px 1px #fff)}
+.side-leaves.left{left:3%}.side-leaves.right{right:3%;transform:scaleX(-1)}
+.hanging{position:absolute;top:0;color:#a8782e;font-size:24px;line-height:1.1;opacity:.9}
+.hanging.left{left:7%}.hanging.right{right:7%}
+.floral-corner{position:absolute;color:#a97828;font-size:26px;top:26px}
+.floral-corner.left{left:25px}.floral-corner.right{right:25px}
+footer{background:#3d2115;color:#f3dfb5;padding:28px 12px;font:11px 'Cinzel',serif;letter-spacing:2px;line-height:2}
+.fade{animation:rise 1.5s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:560px){section{padding:56px 25px;min-height:100svh}.date-grid{gap:4px}.date-item{padding:10px 3px}.date-value{font-size:14px}.side-leaves{font-size:34px;opacity:.55}.hanging{font-size:18px}.temple-mark{width:82px;height:82px;font-size:40px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
-\n</style>
+</style>
 </head>
-
 <body>
-
 <section class="hero">
-  <div class="fade">
-    <div class="toran">❁ ❀ ❁ ❀ ❁</div><div class="temple-arch"><div class="om">ॐ</div></div><p class="mantra">॥ श्री सीतारामचन्द्राभ्यां नमः ॥</p><p class="english-mantra">WITH THE DIVINE BLESSINGS OF SITA RAM</p><div class="diya-row">🪔 ✧ 🪔</div>
-    <p class="subtitle">॥ WITH THE BLESSINGS OF GOD & OUR FAMILIES ॥</p>
-    <div class="divider">❀ ❖ ❀</div>
-    <h1>You're Invited</h1>
-    <h2>TO OUR ENGAGEMENT</h2>
-    <div class="divider">✦</div>
-    <p class="subtitle">TWO HEARTS • ONE BEAUTIFUL BEGINNING</p>
-    <button onclick="document.getElementById('couple').scrollIntoView({behavior:'smooth'})">
-      Open Invitation ♥
-    </button>
+ <span class="hanging left">✺<br>│<br>🔔</span><span class="hanging right">✺<br>│<br>🔔</span>
+ <span class="floral-corner left">❀</span><span class="floral-corner right">❀</span>
+ <span class="side-leaves left">❧ ❧ ❧</span><span class="side-leaves right">❧ ❧ ❧</span>
+ <div class="inner fade">
+  <div class="garland">❀ ✿ ❀ ✿ ❀ ✿ ❀</div>
+  <div class="temple-mark">ॐ</div>
+  <p class="kicker">WITH JOYFUL HEARTS<br>WE INVITE YOU TO CELEBRATE THE</p>
+  <h1>Engagement</h1>
+  <div class="rule">♥ ❖ ♥</div>
+  <div class="names">Muralidharan K</div>
+  <div class="amp">and</div>
+  <div class="rule">✧ ♡ ✧</div>
+  <div class="names">Santhalakshmi J</div>
+  <div class="couple-art">
+   <div class="deity">Sita &amp; Ram</div>
+   <div class="caption">A BLESSING OF LOVE, DEVOTION &amp; TOGETHERNESS</div>
+   <div class="lamp-row">🪔　❀　🪔</div>
   </div>
+  <p class="blessing">With the divine blessings of Lord Rama and Goddess Sita,<br>and the love and blessings of our families.</p>
+  <button onclick="document.getElementById('celebration').scrollIntoView({behavior:'smooth'})">VIEW CELEBRATION DETAILS</button>
+ </div>
 </section>
-
-<section id="couple">
-  <div class="fade">
-    <p class="subtitle">INSPIRED BY THE ETERNAL BOND OF SITA & RAM</p><div class="lotus">❀</div><p class="blessing">सिया राम मय सब जग जानी</p><p class="details">With the grace of Lord Rama and Goddess Sita,<br>and the blessings of our beloved families,</p>
-    <h2>THE CELEBRATION OF LOVE</h2>
-    <div class="divider">❀</div>
-    <div class="names">Muralidharan K</div>
-    <h2>&</h2>
-    <div class="names">Santhalakshmi J</div>
-    <div class="divider">❀</div>
-    <p class="details">
-      Two families, two hearts and one beautiful journey.<br>
-      We invite you to celebrate the beginning of our forever.
-    </p>
+<section id="celebration">
+ <div class="inner fade">
+  <div class="garland">❀ ✿ ❀ ✿ ❀</div>
+  <p class="kicker">A BEAUTIFUL NEW CHAPTER BEGINS</p>
+  <h1>Save the Date</h1>
+  <h2>Sunday, 20 June 2027</h2>
+  <div class="rule">✧ ❖ ✧</div>
+  <div class="date-grid">
+   <div class="date-item"><div class="date-label">DATE</div><div class="date-value">20 June 2027</div></div>
+   <div class="date-item"><div class="date-label">TIME</div><div class="date-value">6 PM – 8 PM</div></div>
+   <div class="date-item"><div class="date-label">OCCASION</div><div class="date-value">Engagement</div></div>
   </div>
+  <p class="kicker">COUNTDOWN TO OUR SPECIAL DAY</p>
+  <div class="countdown">
+   <div class="time"><strong id="days">00</strong><span>DAYS</span></div>
+   <div class="time"><strong id="hours">00</strong><span>HOURS</span></div>
+   <div class="time"><strong id="minutes">00</strong><span>MINUTES</span></div>
+   <div class="time"><strong id="seconds">00</strong><span>SECONDS</span></div>
+  </div>
+  <p class="blessing">Your presence and blessings will make our celebration truly special.</p>
+  <div class="lamp-row">🪔　❀　🪔</div>
+ </div>
 </section>
-
 <section>
-  <div class="card fade">
-    <p class="subtitle">AN AUSPICIOUS DAY TO REMEMBER</p><div class="lotus">❀</div>
-    <h1>20 June 2027</h1>
-    <div class="divider">✦ ❀ ✦</div>
-    <h2>Sunday | 6 PM – 8 PM</h2>
-    <p class="details">Your presence is our greatest blessing.</p>
-
-    <h2 class="gold">COUNTDOWN TO FOREVER</h2>
-    <div class="countdown">
-      <div class="time"><strong id="days">00</strong><span>DAYS</span></div>
-      <div class="time"><strong id="hours">00</strong><span>HOURS</span></div>
-      <div class="time"><strong id="minutes">00</strong><span>MINUTES</span></div>
-      <div class="time"><strong id="seconds">00</strong><span>SECONDS</span></div>
-    </div>
-  </div>
+ <div class="inner fade">
+  <div class="garland">❀ ✿ ❀ ✿ ❀</div>
+  <p class="kicker">WE WOULD BE HONOURED BY YOUR PRESENCE</p>
+  <h1>Join Us</h1>
+  <div class="rule">✧ ❖ ✧</div>
+  <h2>RK MAHAL</h2>
+  <p class="venue">Bharathi Nagar,<br>Kempatty Colony,<br>Town Hall,<br>Coimbatore,<br>Tamil Nadu – 641001</p>
+  <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=RK+Mahal+Bharathi+Nagar+Kempatty+Colony+Town+Hall+Coimbatore+Tamil+Nadu+641001" target="_blank" rel="noopener">GET DIRECTIONS ↗</a>
+  <div class="lamp-row">🪔　❀　🪔</div>
+  <p class="blessing">We look forward to celebrating this beautiful day with you.</p>
+ </div>
 </section>
-
 <section>
-  <div class="card fade">
-    <p class="subtitle">WE WOULD BE HONOURED BY YOUR PRESENCE</p><div class="lotus">🪷</div>
-    <h1>Venue</h1>
-    <div class="divider">❀</div>
-    <h2>RK MAHAL</h2>
-    <p class="details">
-      Bharathi Nagar,<br>
-      Kempatty Colony,<br>
-      Town Hall,<br>
-      Coimbatore,<br>
-      Tamil Nadu – 641001
-    </p>
-    <a class="map-button"
-       href="https://www.google.com/maps/search/?api=1&query=RK+Mahal+Bharathi+Nagar+Kempatty+Colony+Town+Hall+Coimbatore+Tamil+Nadu+641001"
-       target="_blank">
-       Get Directions ↗
-    </a>
-  </div>
+ <div class="inner fade">
+  <div class="garland">❀ ✿ ❀ ✿ ❀</div>
+  <div class="temple-mark">♡</div>
+  <p class="kicker">WITH LOVE &amp; GRATITUDE</p>
+  <div class="names">Muralidharan</div>
+  <div class="amp">&amp;</div>
+  <div class="names">Santhalakshmi</div>
+  <div class="rule">♥ ❖ ♥</div>
+  <p class="kicker">20 • 06 • 2027</p>
+  <p class="blessing">May our journey ahead be blessed with happiness, harmony and everlasting love.</p>
+  <div class="lamp-row">🪔　❀　🪔</div>
+  <p class="footer-note">WITH THE BLESSINGS OF OUR FAMILIES</p>
+ </div>
 </section>
-
-<section>
-  <div class="fade">
-    <div class="temple-arch"><div class="om">॥ श्री राम ॥</div></div><p class="mantra">जय सिया राम</p>
-    <p class="subtitle">YOUR PRESENCE IS OUR GREATEST BLESSING</p>
-    <h1>With Love</h1>
-    <div class="names">Muralidharan</div>
-    <h2>&</h2>
-    <div class="names">Santhalakshmi</div>
-    <div class="diya-row">🪔 ❀ 🪔</div><p class="blessing">॥ श्री सीतारामचन्द्रार्पणमस्तु ॥</p>
-    <p class="subtitle">20 • 06 • 2027</p>
-    <h2>WE CAN'T WAIT TO CELEBRATE WITH YOU!</h2>
-  </div>
-</section>
-
-<footer>
-  MADE WITH LOVE & THE BLESSINGS OF SITA RAM <br><br>
-  MURALIDHARAN & SANTHALAKSHMI
-</footer>
-
+<footer>MADE WITH LOVE<br>MURALIDHARAN K &amp; SANTHALAKSHMI J</footer>
 <script>
-const target = new Date("2027-06-20T18:00:00+05:30").getTime();
-
-function updateCountdown() {
-  let distance = target - Date.now();
-  distance = Math.max(0, distance);
-
-  document.getElementById("days").textContent =
-    Math.floor(distance / 86400000);
-
-  document.getElementById("hours").textContent =
-    Math.floor((distance % 86400000) / 3600000);
-
-  document.getElementById("minutes").textContent =
-    Math.floor((distance % 3600000) / 60000);
-
-  document.getElementById("seconds").textContent =
-    Math.floor((distance % 60000) / 1000);
-}
-
-setInterval(updateCountdown,1000);
-updateCountdown();
-
-// Falling rose petals
-for(let i=0;i<22;i++){
-  let petal=document.createElement("div");
-  petal.className="petals";
-  petal.textContent=["🌸","✿","❀"][i%3];
-  petal.style.left=Math.random()*100+"vw";
-  petal.style.animationDuration=(7+Math.random()*10)+"s";
-  petal.style.animationDelay=(-Math.random()*15)+"s";
-  petal.style.fontSize=(12+Math.random()*15)+"px";
-  document.body.appendChild(petal);
-}
+const target=new Date("2027-06-20T18:00:00+05:30").getTime();
+function updateCountdown(){const d=Math.max(0,target-Date.now());document.getElementById("days").textContent=Math.floor(d/86400000);document.getElementById("hours").textContent=Math.floor(d%86400000/3600000);document.getElementById("minutes").textContent=Math.floor(d%3600000/60000);document.getElementById("seconds").textContent=Math.floor(d%60000/1000)}
+updateCountdown();setInterval(updateCountdown,1000);
 </script>
-
 </body>
 </html>
