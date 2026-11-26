@@ -1,0 +1,36 @@
+name: Build engagement invitation video
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "index.html"
+      - "scripts/render_video.py"
+      - ".github/workflows/render-video.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install browser and video tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Render invitation as MP4
+        run: python scripts/render_video.py
+      - name: Upload MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: engagement-invitation-mp4
+          path: output/engagement-invitation.mp4
+          if-no-files-found: error
+          retention-days: 30
